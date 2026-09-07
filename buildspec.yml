@@ -1,5 +1,8 @@
 version: 0.2
 phases:
+  install:
+    runtime-versions:
+      java: corretto21  # This installs Java 21 (Amazon Corretto)
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
